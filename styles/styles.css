@@ -1,0 +1,142 @@
+/* Set basic styles for the entire page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Style the header section with a dark background and white text */
+header {
+  background-color: #1e2328;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the navigation bar by centering its contents vertically */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the search section with white background, padding, and rounded corners */
+#search-section {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Style the search input with no border and outline */
+#search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Define a pointer cursor for the search button */
+#search-button {
+  cursor: pointer;
+}
+
+/* Style the favorite section with a pointer cursor */
+.favorite-section {
+  cursor: pointer;
+}
+
+/* Define styles for the main content area */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Create a grid layout for displaying hero cards in rows and columns */
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Style individual hero cards with borders, padding, and hover effects */
+.hero-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+/* Apply a scaling effect when hovering over hero cards */
+.hero-card:hover {
+  transform: scale(1.05);
+}
+
+/* Style for displaying a message when there are no favorite heroes */
+.no-favs {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* Define a pointer cursor for favorite icons */
+.add-to-fav-icon {
+  cursor: pointer;
+}
+
+/* Style for solid heart icons, indicating favorited content */
+.fa-solid.fa-heart {
+  color: red;
+}
+
+/* Style for regular heart icons, indicating non-favorited content */
+.fa-regular.fa-heart {
+  color: #ccc;
+}
+
+/* Style hero card images with maximum dimensions */
+.hero-card .hero-image img {
+  max-width: 100px;
+  max-height: 150px;
+}
+
+/* Style the "Add to Favorites" button with specific colors and effects */
+.add-to-fav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Apply a different background color on button hover */
+.add-to-fav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the favorite section with alignment and spacing */
+.favorite-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style links and text within the favorite section */
+.favorite-section a,
+.favorite-section p {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
